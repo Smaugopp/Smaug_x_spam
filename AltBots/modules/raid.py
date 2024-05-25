@@ -35,11 +35,11 @@ async def raid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝐍ᴏ, 𝐓ʜɪꜱ 𝐆ᴜʏ 𝐈ꜱ 𝐎ᴡɴᴇʀ.")
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ.")
             elif uid == OWNER_ID:
-                await e.reply("𝐍ᴏ, 𝐓ʜɪꜱ 𝐆ᴜʏ 𝐈ꜱ 𝐎ᴡɴᴇʀ 𝐎ꜰ 𝐓ʜᴇꜱᴇ 𝐁ᴏᴛꜱ.")
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ.")
             elif uid in SUDO_USERS:
-                await e.reply("𝐍ᴏ, 𝐓ʜɪꜱ 𝐆ᴜʏ 𝐈ꜱ 𝐀 𝐒ᴜᴅᴏ 𝐔ꜱᴇʀ.")
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -110,7 +110,7 @@ async def rraid(e):
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
                     REPLY_RAID.append(check)
-                await e.reply("» 𝐑ᴇᴘʟʏ 𝐑ᴀɪᴅ 𝐋ᴀɢ 𝐆ʏɪ!!")
+                await e.reply("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ !! ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -140,7 +140,7 @@ async def drraid(e):
             global REPLY_RAID
             if check in REPLY_RAID:
                 REPLY_RAID.remove(check)
-            await e.reply("» 𝐑ᴇᴘʟʏʀᴀɪᴅ 𝐇ᴀᴛ 𝐆ʏɪ!!")
+            await e.reply("» ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ !! ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
